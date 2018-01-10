@@ -1,32 +1,19 @@
 import React, {Component} from 'react'
 
 export default class Counter extends Component {
-
-  
     constructor(props){
       super(props)
-      this.state = {
-        counter: 0
-      }
-    }
-    handleIncrement = () => {
-      this.setState({counter: this.state.counter + 1})
-    }
-    handleDecrement = () => {
-      if(this.state.counter > 0) {
-        this.setState({ counter: this.state.counter - 1})
-      }
+      //you can initialize state here
     }
   render() {
     return (
       <div>
-        <button onClick={() => {this.handleDecrement()}}>  
-          Decrement
-        </button>
-        <button onClick={() => {this.handleIncrement()}}>
+        {/*Create an event listener and attach it to this button's onClick function}*/}
+        <button onClick={}>
           Increment
         </button>
-        <p>{this.state.counter}</p>
+        {/*display the counter in this paragraph tag}*/}
+        <p></p>
       </div>
     )
   }
